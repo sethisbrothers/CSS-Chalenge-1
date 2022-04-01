@@ -1,0 +1,36 @@
+#grid{
+    display: grid;
+    grid-template-columns: 70px repeat(2, 1fr) 70px;
+    grid-template-rows: repeat(2, 70px) 500px 70px;
+    grid-gap: 10px;
+    grid-template-areas:
+    "one one one one"
+    "four three three two"
+    "four five five two"
+    "six six six six"
+    ;
+}
+.one{
+    grid-area: one;
+    background-color: red;
+}
+.two{
+    grid-area: two;
+    background-color: yellow;
+}
+.three{
+    grid-area: three;
+    background-color: blue;
+}
+.four{
+    grid-area: four;
+    background-color: green;
+}
+.five{
+    grid-area: five;
+    background-color: burlywood;
+}
+.six{
+    grid-area: six;
+    background-color: aqua;
+}
